@@ -465,7 +465,10 @@ p.feedback-author {
   font-size: 18px;
   line-height: 50px;
   font-family: Montserrat, sans-serif;
-}      
+}
+input::-webkit-input-placeholder {
+  color: #F6EDE9;
+}
       /* Подвал он же футер */      
 .site-footer .container {
   display: flex;
