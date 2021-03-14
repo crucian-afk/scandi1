@@ -85,6 +85,7 @@ h1 {
   height: 310px;
   width: 300px;
   padding: 20px;
+  background-color: rgba(255,219,217,0.5);
 }
 .form-container {
   max-width: 320px;
