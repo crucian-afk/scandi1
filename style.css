@@ -1,0 +1,487 @@
+body {
+  font-family: Montserrat, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #EFE6E4;
+  color: #533738;
+}
+h1 {  
+  text-align: center;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+.wrap {
+  background-image: url("img/background-first.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+      /* Кнопка "Оставить заявку" */
+.button {
+  text-align: center;  
+  cursor: pointer;
+  font-size: 20px;  
+  position: relative;
+  background-color: #CC8B86;
+  border: none;
+  color: #533738;
+  margin-left: 12%;
+  margin-top: 30px;
+  padding: 20px;
+  width: 309px;
+  height: 74px;
+  text-align: center;
+  transition-duration: 0.4s;
+  overflow: hidden;
+  box-shadow: 0 5px 15px #784f4c;
+  border-radius: 4px;
+}
+
+.button:hover {
+  background: #ffeae8;
+  box-shadow: 0px 2px 10px 5px #784f4c;
+  color: #000;
+}
+
+.button:after {
+  content: "";
+  background: #CC8B86;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+.button:focus { 
+  outline:0; 
+}
+
+      /* Форма для оставления данных */
+
+.open-button {
+  position: fixed;
+  bottom: 22px;
+  right: 26px;
+  width: 290px;
+}
+.form-popup {
+  display: none;
+  position: absolute;
+  left: 40%;
+  top: 40%;
+  box-shadow: 0 0 30px grey;
+  height: 310px;
+  width: 300px;
+  padding: 20px;
+}
+.form-container {
+  max-width: 320px;
+}
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+}
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+}
+.form-container .btn {
+  background-color: #CC8B86;    
+  opacity: 0.7;
+}
+.form-container .cancel {
+  background-color: #CC8B86;
+}
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+      /* Меню */
+
+.site-header {
+  padding: 50px 100px;
+}
+nav li {
+  margin-bottom: auto;
+  margin-top: auto;
+}
+nav a:link {
+  color: #533738;
+  text-decoration: none;
+  text-align: left;
+}
+nav a:visited {
+  color: #533738;
+  text-decoration: none;
+}
+.logo {
+  margin-top: auto;
+  margin-bottom: auto;
+  background-image: url("img/logo.png");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 40px;
+} 
+.nav-list {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;  
+  gap: 5px;
+  align-items: start;
+}
+.nav-list li {
+  padding: 5px;
+  list-style-type: none;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 50px;
+  color: #533738;
+  text-align: center;
+}
+.nav-element:hover {
+  box-shadow: 0 0 10px grey;
+}
+
+    /* Первая страничка  */
+
+
+.front {
+  margin-bottom: 180px;
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+}
+h1.help-title {
+  color: #533738;
+  font-size: 50px;
+  line-height: 62px;
+  font-weight: normal;
+  text-transform: none;
+  text-align: left;
+}
+.help {
+  width: 500px;
+  margin-left: 12%;  
+}
+.help-desc {
+  width: 480px;
+  margin-left: 12%;  
+}
+.help-desc p {
+  font-size: 18px;
+}
+
+
+      /* Раздел о нас */
+
+.egg img {
+  width: 444px;
+  position: absolute;
+  left: 9%;
+  box-shadow: 0 8px 4px -4px rgba(0, 0, 0, 0.3);
+}
+.about-us {
+  margin-right: auto;
+  margin-left: auto;  
+  display: flex;
+  width: 1200px;
+  justify-content: space-around;
+}
+
+.about-us p {
+  font-size: 18px;
+  line-height: 30px;
+  padding-bottom: 100px;
+  margin-bottom: 50px;
+}
+.near-egg {
+  width: 528px;
+}
+.achieve {
+  margin-top: auto;
+  background-color: #8D7370;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+}
+.achieve li {
+  margin: 0;
+  padding: 0;
+  
+  font-size: 30px;
+  color: white;
+  font-weight: normal;
+  list-style-type: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+.achieve li.symbols {
+  padding-bottom: 50px;
+  font-size: 30px;
+}
+.achieve li.big {
+  padding-top: 50px;
+  font-size: 50px;
+}
+ul.achieve {
+  margin: 0;
+  margin-top: 40px;
+  padding: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+      /* Раздел наши работы */
+.works {
+  margin: 0 150px 0;
+}
+.work-container {
+  display: flex;  
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;  
+}
+ul.work-container {
+  list-style-type: none;
+}
+.work-container img {
+  margin: 10px 7px;
+}
+.shadow {
+  position: relative;
+}
+p.see-more {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 70px;  
+}
+.see-more a {
+  text-decoration: none;
+  color: #533738;
+}
+.test {
+  position: absolute;
+}
+.test-2 {
+  position: absolute;
+  width: 480px;  
+}
+.test-2 h2 {
+  text-align: center;
+  color: white;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 37px;
+  margin-top: 80px;
+
+}
+.test-2 p {
+  margin-left: 20px;
+  margin-right: 20px;
+  color: white;
+  font-size: 18px;
+}
+      /*  Раздел наша команда  */
+
+.team {
+  background: #E2C4BA;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.team h1 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.team li {
+  list-style-type: none;
+}
+.team-list {
+  margin: 0;
+  padding: 0;
+  display: grid;  
+  width: 70%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 250px 180px;
+  gap: 10px;  
+  margin-right: auto;
+  margin-left: auto;
+}
+.team-list img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+li.team-text {
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 18px;
+  line-height: 30px;
+}
+.how-we {
+  padding: 0;
+  font-size: 40px;
+  color: white;  
+  text-align: center;
+}
+ul.how-we {
+  margin-right: auto;
+  margin-left: auto;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  gap: 20px;  
+}
+.how-we li.cyfral {
+  background-color: #8D7370;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  padding: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.how-we li.sym {
+  font-size: 18px;
+  color: #533738;
+  line-height: 30px;
+  text-align: center;    
+  padding: 10px;
+}
+
+      /* Раздел Отзывы */
+.feedback {
+  background-color: #EFE6E4;
+}
+.feedback h1 {
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+ul.feedback-list {  
+  list-style-type: none;
+  font-size: 18px;
+  padding: 0;
+}
+.feedback-list-container {
+  width: 60%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.feedback-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+p.feedback-author {
+  text-transform: uppercase;
+  margin-top: 40px;
+}
+.fb-text {
+  margin-top: auto;
+  margin-bottom: auto;
+  grid-row: span 2;
+}
+.left {
+  position: absolute;
+  width: 72px;
+  height: 72px;
+  border: 1px solid #CC8B86;
+  background-color: #CC8B86;
+  background-image: url("img/arrow_left.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+  border-radius: 50%; 
+  margin-left: 10%;
+  margin-top: 15%;
+}
+.right {
+  position: absolute;
+  width: 72px;
+  height: 72px;
+  border: 1px solid #CC8B86;
+  background-color: #CC8B86;
+  background-image: url("img/arrow_right.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+  border-radius: 50%;   
+  margin-left: 80%;
+  margin-top: 15%;
+}
+
+
+      /* Раздел Оставить заявку */
+.application {
+  background-color: #8D7370;
+  color: #F6EDE9;
+  background-image: url("img/map.png");
+  background-repeat: no-repeat;
+  background-position: 80% 0;
+  height: 624px;
+}
+
+.application-cont {
+  width: 508px;
+  margin-left: 12%;  
+  padding-top: 50px;
+}
+.application-cont p {
+  font-size: 18px;
+  line-height: 30px;
+}
+.application-cont form {
+  margin-top: 50px;
+}
+.application-cont button {
+  margin-left: 0;
+  box-shadow: none;
+}
+.application h1 {
+  text-align: left;
+  color: white;  
+  margin: 0;
+}
+.application-cont input {  
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #F6EDE9;
+  color: #F6EDE9;
+  background-color: #8D7370;
+  font-size: 18px;
+  line-height: 50px;
+  font-family: Montserrat, sans-serif;
+}      
+      /* Подвал он же футер */      
+.site-footer .container {
+  display: flex;
+  padding: 37px 100px;
+}
+.site-footer p {
+  font-size: 18px;
+}
+.phone {
+  width: 165px;  
+}
+.address {
+  width: 455px;
+  margin-left: 40px;
+  margin-right: auto;
+}
+.ip-name {
+  width: 170px;
+  margin-left: 20px;
+}

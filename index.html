@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="keywords">
+    <meta name="description" content="description">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Марафон 3.0</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="outlines.css"> -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat&display=swap' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="site-header">      
+        <nav class="page-navigation">        
+          <ul class="nav-list">          
+            <li class="logo"><a href="#">SCANDI</a></li>
+            <li class="nav-element"><a href="#aboutus">О компании</a></li>
+            <li class="nav-element"><a href="#works">Портфолио</a></li>
+            <li class="nav-element"><a href="#team">Команда</a></li>
+            <li class="nav-element"><a href="#team">Как мы работаем</a></li>
+            <li class="nav-element"><a href="#feedback">Отзывы клиентов</a></li>
+            <li class="nav-element" onclick="openForm()"><a href="#">Оставить заявку</a></li>
+            <li class="nav-element"><a href="#">+7 (981) 857-46-24</a></li>
+          </ul>
+        </nav>    
+      </header><br>
+      <section class="front">
+        <div class="help">
+          <h1 class="help-title">Поможем сделать вашу квартиру уютнее</h1>        
+        </div>
+        <div class="help-desc">
+          <p>Подбираем текстиль, мебель и аксессуары под ваш интерьер, находим магазины и помогаем организовать доставку</p>
+        </div>    
+          <button class="button" onclick="openForm()">Оставить заявку</button>
+        <div class="form-popup" id="myForm">
+          <form action="#" class="form-container">
+            <h1>Оставить заявку</h1>
+            <label for="name"><b>Имя</b></label>
+            <input type="text" placeholder="Ваше имя" id="name" required> <br><br>
+            <label for="email"><b>Телефон</b></label>
+            <input type="text" placeholder="Ваш телефон" id="email" required> <br><br>
+            <button type="submit" class="btn">Отправить</button> 
+            <button type="button" class="btn cancel" onclick="closeForm()">Закрыть</button>
+          </form>
+        </div>        
+      </section>
+      <br>
+    </div>
+    <main class="page">
+     <section class="about" id="aboutus">
+        <h1>О нас</h1>
+        <div class="about-us">
+          <div class="egg">
+            <img src="img/egg.png" alt="about-img">
+          </div>
+          <div class="near-egg">
+            <p>Премиальный европейский текстиль — одно из самых главных направлений работы коллектива. Создавать неповторимые интерьеры для наших дорогих клиентов, уделяя внимание мельчайшим деталям — вот то,  что по-настоящему вдохновляет дизайнеров нашей студии. <br><br>
+           Наш коллектив сделает все, чтобы после сотрудничества с нами,  Вам было приятно сказать: <br>  
+           « Да! Это именно то, что действительно достойно моего дома!»</p>
+          </div>
+        </div>
+         <ul class="achieve">
+           <li class="big">5</li>
+           <li class="big">100</li>
+           <li class="big">10</li>
+           <li class="symbols">лет опыта</li>
+           <li class="symbols">проектов</li>
+           <li class="symbols">наград</li>
+         </ul>      
+      </section>
+      <section class="works" id="works">
+        <h1>Наши работы</h1>
+        <ul class="work-container">
+          <li class="shadow">
+            <img src="img/bed.png" width="488" height="451" alt="bed">
+          </li>
+          <div class="test">
+            <img src="img/lens.png" width="488" height="451" alt="lens">
+          </div>
+          <div class="test-2">
+            <h2>Квартира-студия 30 кв.м.</h2>
+            <p>В квартире были светлые стены и тёплые цвета. Мы сконцентрировались на отсылках к природе и сделали ребятам уютный интерьер, отсылающий к виллам островов Бали.</p>
+          </div>
+          <li><img src="img/kitchen.png" width="692" height="451" alt="kitchen"></li>
+          <li><img src="img/livingroom.png" width="692" height="451" alt="room"></li>
+          <li><img src="img/bath.png" width="488" height="451" alt="bath"></li>
+        </ul>
+
+        <p class="see-more"><a href="#works">Смотреть ещё <img src="img/long_arrow_right.svg" alt="strelka" height="15"></a></p>
+      </section>
+      <section class="team" id="team">
+        <h1>Команда</h1>
+          <ul class="team-list">
+            <li><img src="img/masha.png" alt="masha"></li>       
+            <li><img src="img/sasha.png" alt="sasha"></li>
+            <li><img src="img/katya.png" alt="katya"></li>
+           
+            <li class="team-text"><p>Это Маша, наш главный дизайнер. Она отвечает за дизайн-проект, приезжает к вам домой, общается и помогает сделать вашу квартиру красивой и уютной.</p></li>
+            <li class="team-text"><p>С нашим менеджером Сашей вы познакомитесь в первую очередь. Она проконсультирует вас, соберёт все документы и ответит на все вопросы.</p></li>
+            <li class="team-text"><p>Катя тоже занимается дизайном. Она всегда находит общий язык
+            с клиентами и точно знает, как обсутроить дом так, чтобы вам понравилось.</p></li>
+          </ul>
+          <h1>Как мы работаем</h1>      
+          <ul class="how-we">
+            <li class="cyfral">1</li>
+            <li class="cyfral">2</li>
+            <li class="cyfral">3</li>
+            <li class="cyfral">4</li>
+
+            <li class="sym">Знакомимся, выезжаем на объект, утверждаем концепцию, подписывем договор.</li>
+            <li class="sym">Подбираем мебель, текстиль, аксессуры. Делаем 3D-зуализацию.</li>
+            <li class="sym">Находим нужные магазины, помогаем с доставкой и оплатой товаров.</li>
+            <li class="sym">Воплощаем проект в жизнь: расставляем мебель и цветы, вешаем шторы, находим места для мелочей</li>
+          </ul>      
+      </section>
+      <section class="feedback" id="feedback">
+        <div class="feedback-title">
+          <h1>Отзывы</h1>
+        </div>
+          <a href="#feedback"><div class="left"></div></a>      
+          <a href="#feedback"><div class="right"></div></a>   
+        <div class="feedback-list-container">
+          <ul class="feedback-list">
+            <li class="fb-text">
+              <p>«Восторг! Спасибо, за комфортную жизнь. Очень рада, что выбрала вашу студию для украшения своего дома.</p>
+              <p>Работа шла быстро, было очень приятно общаться и взаимодествовайть с сотрудниками. Не ожидала, что это будет так легко!</p>
+              <p>Буду советовать и своим друзьям к вам обращаться!»</p>          
+            
+              <p class="feedback-author">Анна Беловская</p>
+            </li>   
+            <li>
+              <img src="img/feedback_photo_1.png" alt="feedback photo">
+            </li>               
+            <li>
+              <img src="img/feedback_photo_2.png" alt="feedback photo">
+            </li>
+          </ul>
+        </div>      
+      </section>
+      <section class="application" id="application">
+        <div class="application-cont">        
+          <h1>Оставить заявку</h1>
+          <p>Оставьте свои контакты. Менеджер перезвонит в удобное вам время и ответит на все вопросы.</p>        
+          <form action="#application" method="post">
+            <input type="text" name="clientname" value="Ваше имя"> <br><br>
+            <input type="text" name="phone" value="Введите телефон">
+            <button class="button" name="go">Оставить заявку</button>            
+          </form> 
+        </div>      
+      </section>      
+    </main>
+
+      <footer class="site-footer">
+        <div class="container">
+          <p class="phone">+7 (981) 857-46-24</p>
+          <p class="address">г. Санкт-петербург, ул. Большая Конюшенная, 19</p>
+          <p class="ip-name">ИП Королёва А.А.</p>
+        </div>
+      </footer>    
+    <script src="button-form.js"></script>
+  </body>
+</html>
